@@ -1,0 +1,317 @@
+:root {
+  --accent-color: #2e2f42;
+  --btn-background-color: #4d5ae5;
+  --focus-hover-color: #404bbf;
+  --main-white: #ffffff;
+  --background-light-color: #f4f4fd;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.button {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding: 120px 0;
+}
+
+/* =================================== COMPONENTS ===================================*/
+
+.section-description-theme-dark {
+  color: #e7e9fc;
+  margin-top: 16px;
+  /* Used only in FOOTER */
+}
+.section-description-theme-light {
+  color: #434455;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.suptitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+/* =================================== /COMPONENTS ===================================*/
+
+/* =================================== LOGO ===================================*/
+.logo-link {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.logo-link-header {
+  margin-right: 76px;
+}
+
+.studio-header {
+  color: var(--accent-color);
+}
+
+.studio-footer {
+  color: var(--background-light-color);
+}
+/* =================================== /LOGO ===================================*/
+
+/* =================================== HEADER ===================================*/
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.menu-link {
+  font-weight: 500;
+}
+
+address {
+  margin-left: auto;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.contact-link {
+  font-style: normal;
+  color: #434455;
+}
+.menu-link:hover,
+.contact-link:hover {
+  color: var(--focus-hover-color);
+}
+/* =================================== /HEADER ===================================*/
+
+/* =============================== HERO =================================== */
+
+.hero {
+  background-color: var(--accent-color);
+  padding: 188px 0;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--main-white);
+
+  margin-bottom: 48px;
+}
+.btn-order {
+  background: var(--btn-background-color);
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  color: var(--main-white);
+}
+.btn-order:hover {
+  background: var(--focus-hover-color);
+}
+
+/* =================================== /HERO =================================== */
+/* =================================== FEATURES ===================================  */
+.features-section {
+  background-color: var(--main-white);
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+/* =================================== /FEATURES ===================================  */
+/* =================================== WE DOING ===================================*/
+.doing-section {
+  background-color: var(--main-white);
+  padding-top: 0;
+}
+.img-sites {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+/* =================================== /WE DOING ===================================*/
+/* =================================== TEAM ===================================*/
+.team-section {
+  background: var(--background-light-color);
+}
+.team-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  /* row-gap вказаний на майбутнє, для випадку якщо додаватимуться ще елементи до списку */
+}
+
+/* .team-card{
+flex-basis: calc((100%-3*24px)/4);
+} */
+
+/* Якщо я вираховую по формулі flex-basis в мене втікає остання картка на наступний рядок */
+
+/* .team-card:not(:nth-child(4n)) {
+  margin-right: 24px;
+}
+.team-card:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 24px;
+} */
+.text-before-team-card {
+  background-color: var(--main-white);
+  padding: 32px;
+}
+.team-name {
+  text-align: center;
+}
+.text-team {
+  text-align: center;
+}
+
+/* =================================== /TEAM ===================================*/
+/* =================================== FOOTER ===================================*/
+footer {
+  background-color: var(--accent-color);
+}
+.footer-container {
+  padding: 100px;
+}
+
+/* =================================== /FOOTER ===================================*/
+
+/* =================================== PORTFOLIO===================================*/
+/* =================================== FILTER ===================================*/
+.filter-section {
+  padding-top: 96px;
+}
+.btns-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+
+  margin-bottom: 72px;
+}
+.btn-filter {
+  padding: 12px 24px;
+  background: var(--background-light-color);
+  border: 1px solid #e7e9fc;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--btn-background-color);
+}
+.btn-filter:hover {
+  background: var(--focus-hover-color);
+  color: var(--main-white);
+}
+/* =================================== /FILTER ===================================*/
+/* =================================== CARDS ===================================*/
+
+.cards-link-works {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+/* .card-link-example:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+.card-link-example:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 48px;
+} */
+
+.text-card-exapmle {
+  background-color: var(--main-white);
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+/* =================================== /CARDS ===================================*/
