@@ -205,6 +205,52 @@ address {
   align-items: center;
   gap: 24px;
 }
+.about-conpany{
+  display: flex;
+  margin-left: calc(-1 * var(--card-between-gab));
+}
+.about{
+  width: calc(100% / 4 - var(--card-between-gab));
+  margin-left:var(--card-between-gab);
+}
+.about >.head{
+  margin-bottom: 8px;
+  
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--color-for-hedear);
+  letter-spacing: 0.02em;
+}
+.about::before{
+  margin-bottom: 8px;
+  background-color: #F4F4FD;
+  border-radius: 4px;
+  
+  height: 112px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before{
+  display: block;
+  content: '';
+  background-image: url(../images/group.svg) ;
+}
+.icon-clock::before {
+  display: block;
+  content: '';
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  display: block;
+  content: '';
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  display: block;
+  content: '';
+  background-image: url(../images/astronaut.svg);
+}
 /* =================================== /FEATURES ===================================  */
 /* =================================== WE DOING ===================================*/
 .doing-section {
