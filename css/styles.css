@@ -240,6 +240,27 @@ address {
 .text-team {
   text-align: center;
 }
+.group-icon{
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 24px;
+}
+.icon-main{
+  display: block;
+  border: none;
+  height: 40px;
+  fill: var(--background-light-color);
+  border-radius: 50%;
+  background-color: var(--btn-background-color);
+}
+.icon-link{
+  margin: auto;
+  width: 16px;
+  height: 16px;
+}
+.icon-main:hover,.icon-main:focus{
+  background-color: var(--focus-hover-color);
 
 /* =================================== /TEAM ===================================*/
 /* =================================== FOOTER ===================================*/
@@ -260,10 +281,10 @@ footer {
 .footer-social-media {
   margin-left: 120px;
 }
-.title-social-media{
-font-weight: 500;
-color: var(--main-white);
-margin-bottom: 16px;
+.title-social-media {
+  font-weight: 500;
+  color: var(--main-white);
+  margin-bottom: 16px;
 }
 .social-list-item {
 }
@@ -274,9 +295,13 @@ margin-bottom: 16px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-instagram{
+.footer-instagram {
   color: #f4f4fd;
+  margin: 8px;
+  width: 24px;
+  height: 24px;
 }
+
 /* =================================== /FOOTER ===================================*/
 
 /* =================================== PORTFOLIO===================================*/
