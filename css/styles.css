@@ -239,6 +239,7 @@ address {
 }
 .text-team {
   text-align: center;
+  margin-bottom: 8px;
 }
 .social-media-link {
   display: block;
@@ -275,20 +276,21 @@ background-color: var(--focus-hover-color);
   justify-content: center;
   width: 168px;
   height: 88px;
-  color: #8E8F99;
+  fill: #8E8F99;
 
   border: 1px solid #8E8F99;
   border-radius: 4px;
 
 }
-.brend{
-fill:currentColor;
-}
 .bisnes-partner:hover,.bisnes-partner:focus{
-color: #404BBF;
+fill: #404BBF;
 border: 1px solid #404BBF;
 border-radius: 4px;
 }
+.brend{
+fill:currentColor;
+}
+
 /* ================================== /CUSTOMERS =========================*/
 /* =================================== FOOTER =================================== */
 
