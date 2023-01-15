@@ -262,6 +262,33 @@ background-color: var(--focus-hover-color);
 /* =================================== /TEAM ===================================*/
 /* ================================== CUSTOMERS =========================*/
 
+.customer{
+  display: flex;
+  text-align: center;
+  padding: 0px;
+  margin-top: 72px;
+  gap: 24px;
+}
+.bisnes-partner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  color: #8E8F99;
+
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+
+}
+.brend{
+fill:currentColor;
+}
+.bisnes-partner:hover,.bisnes-partner:focus{
+color: #404BBF;
+border: 1px solid #404BBF;
+border-radius: 4px;
+}
 /* ================================== /CUSTOMERS =========================*/
 /* =================================== FOOTER =================================== */
 
