@@ -232,7 +232,7 @@ address {
 
 .text-before-team-card {
   background-color: var(--main-white);
-  padding: 32px;
+  padding: 32px 16px;
 }
 .team-name {
   text-align: center;
@@ -240,36 +240,31 @@ address {
 .text-team {
   text-align: center;
 }
-.group-icon{
-  display: flex;
-  justify-content: center;
-  margin-top: 8px;
-  gap: 24px;
-}
-.icon-main{
+.social-media-link {
   display: block;
-  border: none;
+  width: 40px;
   height: 40px;
-  fill: var(--background-light-color);
   border-radius: 50%;
-  background-color: var(--btn-background-color);
+  background-color:var(--btn-background-color);
 }
-.icon-link{
+.social-link {
+  color: #f4f4fd;
+  width: 24px;
   margin: auto;
-  width: 16px;
-  height: 16px;
+  row-gap: 24px;
+  height: 24px;
 }
-.icon-main:hover,.icon-main:focus{
-  background-color: var(--focus-hover-color);
+
 
 /* =================================== /TEAM ===================================*/
-/* =================================== FOOTER ===================================*/
-footer {
-  background-color: var(--accent-color);
-}
+/* =================================== FOOTER =================================== */
+
 .footer-container {
   padding: 100px;
   display: flex;
+}
+.footer {
+  background-color: var(--accent-color);
 }
 .social-list {
   display: flex;
@@ -288,20 +283,17 @@ footer {
 }
 .social-list-item {
 }
+
+
 .social-list-item-link {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-instagram {
+.social-link {
   color: #f4f4fd;
   margin: 8px;
   width: 24px;
   height: 24px;
 }
-
 /* =================================== /FOOTER ===================================*/
 
 /* =================================== PORTFOLIO===================================*/
@@ -326,7 +318,6 @@ footer {
   display: flex;
   align-items: center;
   text-align: center;
-
   color: var(--btn-background-color);
 }
 .btn-filter:hover {
