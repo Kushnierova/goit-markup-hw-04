@@ -4,6 +4,10 @@
   --focus-hover-color: #404bbf;
   --main-white: #ffffff;
   --background-light-color: #f4f4fd;
+
+  /* fonts */
+  --logo-font: Raleway, sans-serif;
+  --text-font: Roboto, sans-serif;
 }
 
 h1,
@@ -33,7 +37,7 @@ img {
 
 .button {
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--text-font);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -44,7 +48,7 @@ img {
   margin-right: auto;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--text-font);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -101,7 +105,7 @@ body {
 
 /* =================================== LOGO ===================================*/
 .logo-link {
-  font-family: "Raleway";
+  font-family: var(--logo-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -226,18 +230,6 @@ address {
   /* row-gap вказаний на майбутнє, для випадку якщо додаватимуться ще елементи до списку */
 }
 
-/* .team-card{
-flex-basis: calc((100%-3*24px)/4);
-} */
-
-/* Якщо я вираховую по формулі flex-basis в мене втікає остання картка на наступний рядок */
-
-/* .team-card:not(:nth-child(4n)) {
-  margin-right: 24px;
-}
-.team-card:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 24px;
-} */
 .text-before-team-card {
   background-color: var(--main-white);
   padding: 32px;
@@ -256,46 +248,35 @@ footer {
 }
 .footer-container {
   padding: 100px;
+  display: flex;
 }
-/* .social-list{
+.social-list {
   display: flex;
   justify-content: space-between;
   width: 208px;
   margin: 0 auto;
-    gap: 16px;
+  gap: 16px;
 }
-.social-list-item{
-
+.footer-social-media {
+  margin-left: 120px;
 }
-.social-list-item-link{
+.title-social-media{
+font-weight: 500;
+color: var(--main-white);
+margin-bottom: 16px;
+}
+.social-list-item {
+}
+.social-list-item-link {
   display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color:rgba(255, 255, 255, 0.1); */
-  /* /* background-size: 24px 24px;
-  background-repeat: no-repeat;
-  background-position: center; */
+  background-color: rgba(255, 255, 255, 0.1);
 }
-/* .social-list-item-link-instagram{
-background-image: url(../images/instagram\ 2.svg);
-/* }
-.social-list-item-link-twitter{ */
-background-image: url(../images/twitter\ 1.svg);
+.footer-instagram{
+  color: #f4f4fd;
 }
-.social-list-item-link-fasebook{
-background-image: url(../images/facebook\ 1.svg);
-}
-.social-list-item-link-linkedin{
-  background-image: url(../images/linkedin\ 1.svg);
-} 
-Цей спосіб підходить для іконок які в майбутньому не будуть змінювати свій колір
-*/
-/* .icon-social-media{ */
-  width: 24px;
-  height: 24px;
-} */
-
 /* =================================== /FOOTER ===================================*/
 
 /* =================================== PORTFOLIO===================================*/
@@ -337,13 +318,6 @@ background-image: url(../images/facebook\ 1.svg);
   row-gap: 48px;
   column-gap: 24px;
 }
-
-/* .card-link-example:not(:nth-child(3n)) {
-  margin-right: 24px;
-}
-.card-link-example:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 48px;
-} */
 
 .text-card-exapmle {
   background-color: var(--main-white);
