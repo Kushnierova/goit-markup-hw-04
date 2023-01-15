@@ -257,6 +257,44 @@ footer {
 .footer-container {
   padding: 100px;
 }
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  width: 208px;
+  margin: 0 auto;
+    gap: 16px;
+}
+.social-list-item{
+
+}
+.social-list-item-link{
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:rgba(255, 255, 255, 0.1);
+  /* background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+/* .social-list-item-link-instagram{
+background-image: url(../images/instagram\ 2.svg);
+}
+.social-list-item-link-twitter{
+background-image: url(../images/twitter\ 1.svg);
+}
+.social-list-item-link-fasebook{
+background-image: url(../images/facebook\ 1.svg);
+}
+.social-list-item-link-linkedin{
+  background-image: url(../images/linkedin\ 1.svg);
+} 
+Цей спосіб підходить для іконок які в майбутньому не будуть змінювати свій колір
+*/
+.icon-social-media{
+  width: 24px;
+  height: 24px;
+}
 
 /* =================================== /FOOTER ===================================*/
 
