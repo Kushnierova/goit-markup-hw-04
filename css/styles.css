@@ -247,6 +247,9 @@ address {
   border-radius: 50%;
   background-color:var(--btn-background-color);
 }
+.social-media-link:hover, .social-media-link:focus{
+background-color: var(--focus-hover-color);
+}
 .social-link {
   color: #f4f4fd;
   width: 24px;
@@ -291,11 +294,16 @@ address {
 .social-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.social-list-item-link:hover, .social-list-item-link:focus{
+  background-color: #31D0AA;
+}
+
 .social-link {
   color: #f4f4fd;
   margin: 8px;
   width: 24px;
   height: 24px;
+
 }
 /* =================================== /FOOTER ===================================*/
 
