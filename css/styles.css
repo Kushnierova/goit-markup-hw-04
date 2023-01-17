@@ -165,12 +165,33 @@ address {
 .contact-link:hover {
   color: var(--focus-hover-color);
 }
+
+.menu-link:hover::after {
+  width: 48px;
+  height: 4px;
+  background-color: var(--focus-hover-color);
+  border-radius: 2px;
+  margin-top: 24px;
+  display: block;
+  content: "";
+}
 /* =================================== /HEADER ===================================*/
 
 /* =============================== HERO =================================== */
 
 .hero {
   background-color: var(--accent-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  /* В секції hero стоїть класс container, але hero не наслідує чомусь margin-и */
+
   padding: 188px 0;
 }
 .main-title {
@@ -205,33 +226,40 @@ address {
   align-items: center;
   gap: 24px;
 }
-.about-conpany {
-  display: flex;
-  margin-left: calc(-1 * var(--card-between-gab));
-}
-.about {
-  width: calc(100% / 4 - var(--card-between-gab));
-  margin-left: var(--card-between-gab);
-}
-.about > .head {
-  margin-bottom: 8px;
 
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--color-for-hedear);
-  letter-spacing: 0.02em;
-}
-.about::before {
-  margin-bottom: 8px;
+.about-feauters {
   background-color: #f4f4fd;
   border-radius: 4px;
-
   height: 112px;
+  width: 264px;
+
   background-repeat: no-repeat;
   background-position: center;
+  padding: 24px;
+  margin-bottom: 8px;
 }
-.icon-antenna::before {
+/* .icon-antenna {
+  display: block;
+  content: "";
+  background-image: url(../images/group.svg);
+}
+.icon-clock {
+  display: block;
+  content: "";
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram {
+  display: block;
+  content: "";
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut {
+  display: block;
+  content: "";
+  background-image: url(../images/astronaut.svg);
+} */
+
+/* .icon-antenna::before {
   display: block;
   content: "";
   background-image: url(../images/group.svg);
@@ -250,7 +278,7 @@ address {
   display: block;
   content: "";
   background-image: url(../images/astronaut.svg);
-}
+} */
 /* =================================== /FEATURES ===================================  */
 /* =================================== WE DOING ===================================*/
 .doing-section {
@@ -287,23 +315,28 @@ address {
   text-align: center;
   margin-bottom: 8px;
 }
-.social-media-link {
-  display: block;
+/* ====================================== SVG-SOCIAL-MEDIA ===============================*/
+.social-list{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: var(--btn-background-color);
 }
-.social-media-link:hover,
-.social-media-link:focus {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--focus-hover-color);
 }
-.social-link {
-  color: #f4f4fd;
-  width: 24px;
-  margin: auto;
-  row-gap: 24px;
-  height: 24px;
+.social-list-icon {
+  height: 16px;
+  width: 16px;
 }
 
 /* =================================== /TEAM ===================================*/
@@ -329,13 +362,19 @@ address {
 }
 .bisnes-partner:hover,
 .bisnes-partner:focus {
-  fill: #404bbf;
-  border: 1px solid #404bbf;
+  border: 1px solid var(--focus-hover-color);
   border-radius: 4px;
 }
 .brend {
-  fill: currentColor;
+  width: 104px;
+  height: 56px;
+  fill: #AFB1B8;
 }
+.bisnes-partner:hover .brend,
+.bisnes-partner:focus .brend {
+fill: var(--focus-hover-color);
+}
+
 
 /* ================================== /CUSTOMERS =========================*/
 /* =================================== FOOTER =================================== */
@@ -347,13 +386,7 @@ address {
 .footer {
   background-color: var(--accent-color);
 }
-.social-list {
-  display: flex;
-  justify-content: space-between;
-  width: 208px;
-  margin: 0 auto;
-  gap: 16px;
-}
+
 .footer-social-media {
   margin-left: 120px;
 }
@@ -362,23 +395,15 @@ address {
   color: var(--main-white);
   margin-bottom: 16px;
 }
-.social-list-item {
-}
 
-.social-list-item-link {
+.social-list-link-footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-list-item-link:hover,
-.social-list-item-link:focus {
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
   background-color: #31d0aa;
 }
 
-.social-link {
-  color: #f4f4fd;
-  margin: 8px;
-  width: 24px;
-  height: 24px;
-}
 /* =================================== /FOOTER ===================================*/
 
 /* =================================== PORTFOLIO===================================*/
