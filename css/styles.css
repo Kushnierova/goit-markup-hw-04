@@ -129,6 +129,11 @@ body {
 /* =================================== HEADER ===================================*/
 header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .page-header-container {
   display: flex;
@@ -294,6 +299,9 @@ address {
 /* =================================== TEAM ===================================*/
 .team-section {
   background: var(--background-light-color);
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .team-cards {
   display: flex;
@@ -303,10 +311,16 @@ address {
   row-gap: 24px;
   /* row-gap вказаний на майбутнє, для випадку якщо додаватимуться ще елементи до списку */
 }
+.team-card {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .text-before-team-card {
   background-color: var(--main-white);
   padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   text-align: center;
@@ -316,7 +330,7 @@ address {
   margin-bottom: 8px;
 }
 /* ====================================== SVG-SOCIAL-MEDIA ===============================*/
-.social-list{
+.social-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -355,7 +369,6 @@ address {
   justify-content: center;
   width: 168px;
   height: 88px;
-  fill: #8e8f99;
 
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -368,13 +381,12 @@ address {
 .brend {
   width: 104px;
   height: 56px;
-  fill: #AFB1B8;
+  fill: #8e8f99;
 }
 .bisnes-partner:hover .brend,
 .bisnes-partner:focus .brend {
-fill: var(--focus-hover-color);
+  fill: var(--focus-hover-color);
 }
-
 
 /* ================================== /CUSTOMERS =========================*/
 /* =================================== FOOTER =================================== */
@@ -424,15 +436,17 @@ fill: var(--focus-hover-color);
   padding: 12px 24px;
   background: var(--background-light-color);
   border: 1px solid #e7e9fc;
-
   display: flex;
   align-items: center;
   text-align: center;
   color: var(--btn-background-color);
 }
-.btn-filter:hover {
+.btn-filter:hover,
+.btn-filter:focus {
   background: var(--focus-hover-color);
   color: var(--main-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* =================================== /FILTER ===================================*/
 /* =================================== CARDS ===================================*/
@@ -442,7 +456,7 @@ fill: var(--focus-hover-color);
   align-items: center;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
+  column-gap: 22px;
 }
 
 .text-card-exapmle {
@@ -450,6 +464,13 @@ fill: var(--focus-hover-color);
   border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
+}
+
+.card-link-example:hover,
+.card-link-example:focus {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* =================================== /CARDS ===================================*/
