@@ -131,9 +131,6 @@ header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .page-header-container {
   display: flex;
@@ -171,7 +168,7 @@ address {
   color: var(--focus-hover-color);
 }
 
-.menu-link:hover::after {
+/* .menu-link:hover::after {
   width: 48px;
   height: 4px;
   background-color: var(--focus-hover-color);
@@ -179,7 +176,7 @@ address {
   margin-top: 24px;
   display: block;
   content: "";
-}
+} */
 /* =================================== /HEADER ===================================*/
 
 /* =============================== HERO =================================== */
@@ -299,9 +296,6 @@ address {
 /* =================================== TEAM ===================================*/
 .team-section {
   background: var(--background-light-color);
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
 }
 .team-cards {
   display: flex;
@@ -392,7 +386,8 @@ address {
 /* =================================== FOOTER =================================== */
 
 .footer-container {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
 }
 .footer {
@@ -410,6 +405,10 @@ address {
 
 .social-list-link-footer {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list-icon-footer{
+width: 24px;
+height: 24px;
 }
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
@@ -445,6 +444,7 @@ address {
 .btn-filter:focus {
   background: var(--focus-hover-color);
   color: var(--main-white);
+  border: 1px solid var(--focus-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -456,7 +456,7 @@ address {
   align-items: center;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 22px;
+  column-gap: 24px;
 }
 
 .text-card-exapmle {
@@ -468,7 +468,6 @@ address {
 
 .card-link-example:hover,
 .card-link-example:focus {
-  border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
