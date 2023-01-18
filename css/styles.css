@@ -230,7 +230,7 @@ address {
 }
 
 .about-feauters {
-  background-color: #f4f4fd;
+  background-color: var(--background-light-color);
   border-radius: 4px;
   height: 112px;
   width: 264px;
@@ -406,9 +406,9 @@ address {
 .social-list-link-footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-list-icon-footer{
-width: 24px;
-height: 24px;
+.social-list-icon-footer {
+  width: 24px;
+  height: 24px;
 }
 .social-list-link-footer:hover,
 .social-list-link-footer:focus {
